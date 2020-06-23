@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+
+    background-color: #849D8F;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0000);
+    overflow: hidden;
+}
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a{
+    color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    color: #F26843;
+}
+
+.button {
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    
+    
+    background-color: #E74A35;
+    border: none;
+    border-radius: 50px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #F26843;
+}
+
+.button-slider {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    width: 282px;
+    height: 66px;
+    left: 459px;
+    top: 541px;
+    margin-left: 459px;
+}
+
+.slider-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.button-banner-jam {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    width: 168px;
+    height: 49px;
+}
+.button-banner-chocolate {
+    width: 192px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.banner-first {
+    display: inline-block;
+    margin-left: 48px;
+    width: 500px;
+    height: 210px;
+    background: #ffffff;
+    background-image: url("../img/raspberry-bg.png");
+    background-repeat: repeat;
+    border-radius: 15px;
+}
+
+.banner-second {
+    margin-left: 48px;
+    width: 500px;
+    height: 210px;
+    background: #ffffff;
+    background-image: url("../img/chocolate_bg.png");
+    background-repeat: repeat;
+    border-radius: 15px;
+}
+
+.about-magazine {
+    width: 1250px;
+    color: #000000;
+    background-image: url("../img/waffle-big.png");
+    background-repeat: repeat;
+    
+}
+
+.about-list {
+    list-style: none;
+}
+
+h3 {
+    margin-left: 48px;
+    width: 1043px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.about-ice {
+    display: inline-block;
+    width: 488px;
+    height: 224px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    }
+
+.about-eco {
+    display: inline-block;
+    width: 488px;
+    height: 224px;
+    font-size: 16px;
+    line-height: 22px;
+    }   
+
+.about-cow {
+    display: inline-block;
+    width: 488px;
+    height: 224px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.about-thermometer {
+    display: inline-block;
+    width: 488px;
+    height: 224px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.news {
+    padding-right: 235px;
+    margin-left: 48px;
+    border-radius: 15px;
+    height: 220px;
+    width: 320px;
+    color: #000000;
+    background-image: url("../img/strauberry-bg.jpg");
+    background-repeat: no-repeat;
+}
+
+h4 {
+    padding-top: 22px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+
+.news-item {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.news-item:hover,
+.news-item:focus {
+    color: #F26843;
+}
+
+.mailing {
+    margin-left: 48px;
+    border-radius: 15px;
+    height: 213px;
+    width: 552px;
+    color: #000000;
+    background-image: url("../img/mailed.jpg");
+    background-repeat: no-repeat;
+}
+
+.mailing-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contact {
+    border-radius: 15px;
+    height: 308px;
+    width: 305px;
+    color: #000000;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+}
+
+.footer-help {
+    text-align: center;
+}
+
+.footer-help{
+    list-style: none;
+}
+
+.footer-copyright {
+    text-align: right;
+}
