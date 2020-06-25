@@ -17,6 +17,13 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -29,6 +36,7 @@ a {
 }
 
 .main-navigation {
+    display: flex;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
@@ -37,6 +45,12 @@ a {
 .site-navigation,
 .user-navigation {
     list-style: none;
+    display: flex;
+}
+
+.user-navigation {
+    margin-left: 500px;
+    line-height: 5px;
 }
 
 .site-navigation a,
@@ -49,6 +63,10 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
     color: #F26843;
+}
+
+.header-info {
+    text-align: right;
 }
 
 .button {
@@ -80,10 +98,16 @@ a {
 }
 
 .slider-text {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-weight: bold;
     font-size: 60px;
     line-height: 60px;
+}
+
+.banners {
+    display: flex;
 }
 
 .button-banner-jam {
@@ -94,6 +118,7 @@ a {
     height: 49px;
 }
 .button-banner-chocolate {
+    
     width: 192px;
     height: 48px;
     font-weight: bold;
@@ -101,21 +126,48 @@ a {
     line-height: 24px;
 }
 
+.raspberry {
+    margin-left: 20px;
+    width: 316px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 5px;
+}
+
+.banner-info {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    width: 515px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .banner-first {
-    display: inline-block;
-    margin-left: 48px;
-    width: 500px;
-    height: 210px;
+    width: 560px;
+    height: 230px;
     background: #ffffff;
     background-image: url("../img/raspberry-bg.png");
     background-repeat: repeat;
     border-radius: 15px;
 }
 
+.chocolate {
+    margin-left: 20px;
+    width: 360px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 5px;
+}
+
 .banner-second {
-    margin-left: 48px;
-    width: 500px;
-    height: 210px;
+    margin-left: 80px;
+    width: 560px;
+    height: 230px;
     background: #ffffff;
     background-image: url("../img/chocolate_bg.png");
     background-repeat: repeat;
@@ -123,7 +175,10 @@ a {
 }
 
 .about-magazine {
-    width: 1250px;
+    margin: auto;
+    border-radius: 15px;
+    width: 1200px;
+    height: 325px;
     color: #000000;
     background-image: url("../img/waffle-big.png");
     background-repeat: repeat;
@@ -131,53 +186,54 @@ a {
 }
 
 .about-list {
+    display: flex;
     list-style: none;
 }
 
 h3 {
-    margin-left: 48px;
+    margin-left: 20px;
+    padding-top: 10px;
     width: 1043px;
     height: 60px;
     font-size: 24px;
-    line-height: 48px;
+    line-height: 30px;
 }
 
-.about-ice {
-    display: inline-block;
-    width: 488px;
-    height: 224px;
-    margin: 0;
-    font-size: 16px;
-    line-height: 22px;
-    }
-
+.about-ice,
 .about-eco {
+    margin-left: 10px;
     display: inline-block;
     width: 488px;
-    height: 224px;
-    font-size: 16px;
-    line-height: 22px;
-    }   
-
-.about-cow {
-    display: inline-block;
-    width: 488px;
-    height: 224px;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
 }
 
+.box2 {
+    padding-left: 20px;
+}
+
+.about-cow,
 .about-thermometer {
+    margin-left: 10px;
     display: inline-block;
-    width: 488px;
-    height: 224px;
+    width: 482px;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+}
+
+
+.news-mailing {
+    padding-top: 50px;
+    width: 1200;
+    display: flex;
 }
 
 .news {
     padding-right: 235px;
-    margin-left: 48px;
     border-radius: 15px;
     height: 220px;
     width: 320px;
@@ -187,7 +243,7 @@ h3 {
 }
 
 h4 {
-    padding-top: 22px;
+    margin-left: 20px;
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
@@ -195,6 +251,8 @@ h4 {
 }
 
 .news-item {
+    margin-left: 20px;
+    width: 309px;
     color: black;
     font-weight: bold;
     font-size: 24px;
@@ -208,19 +266,34 @@ h4 {
 }
 
 .mailing {
-    margin-left: 48px;
+    margin-left: 90px;
     border-radius: 15px;
-    height: 213px;
-    width: 552px;
+    height: 220px;
+    width: 560px;
     color: #000000;
     background-image: url("../img/mailed.jpg");
     background-repeat: no-repeat;
 }
 
 .mailing-text {
+    width: 517px;
+    margin-left:15px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+}
+
+.login-form {
+    width: 371px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-mail {
+    width: 141px;
+    height: 46px;
+    text-align: center;
 }
 
 .contact {
@@ -232,6 +305,17 @@ h4 {
     background-repeat: no-repeat;
 }
 
+.main-footer {
+    display: flex;
+    width: 1177px;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-direction: row;
+    width: 186px;
+}
+
 .footer-social ul {
     list-style: none;
 }
@@ -240,14 +324,40 @@ h4 {
     color: #ffffff;
 }
 
-.footer-help {
-    text-align: center;
+.help {
+    color: #ffffff;
+    margin-left: 160px;
+    width: 355px;
+    height: 100px;
 }
 
 .footer-help{
+    display: flex;
+    flex-direction: row;
     list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline;
+}
+
+.footer-help a {
+    color: #ffffff;
+}
+
+.info-column {
+    margin-left: 15px;
 }
 
 .footer-copyright {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 160px;
+    width: 219px;
+    text-align: center;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="container">
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
@@ -37,7 +37,7 @@
     <main class="container">
         <h1 class="visually-hidden">Gllacy Shop</h1>
 
-        <section>
+        <section class="main-slaider">
             <img src="img/ice.png" alt="Мороженка">
             <div  class="slider">
                 <p class="slider-text">Крем-боюле и пломбир</br>
@@ -51,14 +51,14 @@
 
         <section class="banners">
             <div class="banner-first">
-                <h2>Малинка даром!</h2>
-                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
+                <h2 class="raspberry">Малинка даром!</h2>
+                <p class="banner-info">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
                     банку малинового варенья бесплатно.</p>
                 <button type="button" class="button button-banner-jam">Хочу варенье!</button>
             </div>
             <div class="banner-second">
-                <h2>Шоколадки даром!</h2>
-                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+                <h2 class="chocolate">Шоколадки даром!</h2>
+                <p class="banner-info">При покупке 2 кг пломбира, добавим в ваш заказ упаковку
                     вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                 <button type="button" class="button button-banner-chocolate">Хочу шоколадки!</button>
             </div>
@@ -77,54 +77,64 @@
         </section>
 
         <section class="about-magazine">
-            <h3>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h3>
-            <ul class="about-list">
-                <li class="about-ice">
-                    <img src="img/ice-cream.svg" width="49" height="49" alt="Пломбир">
-                    <p>Все наше мороженое изготавливается на собственном производстве,
-                        с использованием современного оборудования и проверенных технологий</p>
-                </li>
-                <li class="about-cow">
-                    <img src="img/cow.svg" width="49" height="49" alt="Корова">
-                    <p>Закупка ингредиентов производится только у проверенных 
-                        фермерских хозяйств и компаний, с которыми нас связывает
-                        долговременное сотрудничество.
-                    </p>
-                </li>
-                <li class="about-eco">
-                    <img src="img/eco.svg" width="49" height="49" alt="Лист">
-                    <p>Для приготовления мороженого используются настоящие сливки и молоко
-                        высочайшего качества. Все дополнительные ингредиенты и добавки
-                        произведены из натурального, экологически чистого сырья.
-                    </p>
-                </li>
-                <li class="about-thermometer">
-                    <img src="img/thermometer.svg" width="49" height="49" alt="Градусник">
-                    <p>Доставка нашего мороженого до заказчиков осуществляется
-                        в специальном термопаке, который не дает мороженому растаять в 
-                        пути и позволяет сохранить превосходный вкус.
-                    </p>
-                </li>
-            </ul>
+            <div class="container">
+                <h3>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h3>
+                <ul class="about-list">
+                    <div class="box1">
+                        <li class="img-ice">
+                            <img src="img/ice-cream.svg" width="49" height="49" alt="Пломбир">
+                            <p class="about-ice">Все наше мороженое изготавливается на собственном производстве,
+                                с использованием современного оборудования и проверенных технологий</p>
+                        </li>
+                        <li class="img-eco">
+                            <img src="img/eco.svg" width="49" height="49" alt="Лист">
+                            <p class="about-eco">Для приготовления мороженого используются настоящие сливки и молоко
+                                высочайшего качества. Все дополнительные ингредиенты и добавки
+                                произведены из натурального, экологически чистого сырья.
+                            </p>
+                        </li>
+                    </div>
+                    <div class="box2">
+                        <li class="img-cow">
+                            <img src="img/cow.svg" width="49" height="49" alt="Корова">
+                            <p class="about-cow">Закупка ингредиентов производится только у проверенных 
+                                фермерских хозяйств и компаний, с которыми нас связывает
+                                долговременное сотрудничество.
+                            </p>
+                        </li>
+                        <li class="img-thermometer">
+                            <img src="img/thermometer.svg" width="49" height="49" alt="Градусник">
+                            <p class="about-thermometer">Доставка нашего мороженого до заказчиков осуществляется
+                                в специальном термопаке, который не дает мороженому растаять в 
+                                пути и позволяет сохранить превосходный вкус.
+                            </p>
+                        </li>
+                    </div>   
+                </ul>
+            </div>
         </section>
         
-        <section class="news">
-            <h4>Новое в нашем блоге</h4>
-            <a href="#" class="news-item">10 способов сервировки фруктовых щербетов к столу</a>
-        </section>
-        <section class="mailing">
-            <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-                всего самого вкусного, что у нас происходит. Обещаем не спамить
-                 и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form class="login-form" action="https://echo.htmlacademy/ru" method="post">
-                <p>
-                    <label for="user-login"></label> 
-                    <input id="user-login" type="text" name="login" value="" placeholder="email@example.com">
+        <div class="news-mailing">
+            <section class="news">
+                <h4>Новое в нашем блоге</h4>
+                <a href="#" class="news-item">10 способов сервировки фруктовых щербетов к столу</a>
+            </section>
+            <section class="mailing">
+                <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+                    всего самого вкусного, что у нас происходит. Обещаем не спамить
+                    и не слать всякой ненужной ерунды. Честно =)
                 </p>
-            </form>
-            <button type="submit">Отправить</button>
-        </section>
+                <div  class="login-form">
+                    <form action="https://echo.htmlacademy/ru" method="post">
+                        <p>
+                            <label for="user-login"></label> 
+                            <input id="user-login" type="text" name="login" value="" placeholder="email@example.com">
+                        </p>
+                    </form>
+                    <button class="button button-mail" type="submit">Отправить</button>
+                </div>
+            </section>
+        </div>
         
         <section>
             <img src="img/map.jpg" alt="Карта">
@@ -152,16 +162,20 @@
         </div>
         <div class="help">
             <ul class="footer-help">
-                <li><a href="#">Для поставщиков</a></li>
-                <li><a href="#">О производстве</a></li>
-                <li><a href="#">Наши документы</a></li>
-                <li><a href="#">Экологические стандарты</a></li>
+                <div>
+                    <li><a href="#">Для поставщиков</a></li>
+                    <li><a href="#">О производстве</a></li>
+                </div>
+                <div class="info-column">
+                    <li><a href="#">Наши документы</a></li>
+                    <li><a href="#">Экологические стандарты</a></li>
+                </div>
             </ul>
         </div>
         <div class="footer-copyright">
+            <img src="img/logo-htmlacademy.svg" alt="HTML Academy">
             <p>
-                Разработано:
-                <a href="https://htmlacademy.ru">HTML Academy</a>
+                Сделано в HTML Academy
             </p>
         </div>
     </footer>
