@@ -1,26 +1,174 @@
 body {
     margin: 0;
-    padding: 0;
-
     font-family: "Roboto", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.2;
+    color: white;
+}
 
-    background-color: #849D8F;
-    background-position: top center;
+.visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+  
+    clip: rect(0, 0, 0, 0);
+}
+  
+.site-wrapper {
+    min-width: 940px;
+    background-color: #849d8f;
+    background-image: url("../img/ice.png");
     background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0 auto;
+    
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+  
+.site-wrapper::before,
+.site-wrapper::after {
+    content: "";
+  
+    visibility: hidden;
+}
+  
+.site-wrapper::before {
+    background-image: url("img/slider-item2.png");
+}
+  
+.site-wrapper::after {
+    background-image: url("img/slider-item3.png");
+}
+  
+.container {
+    box-sizing: border-box;
+    width: 1250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-left: 27px;
+    padding-top: 9px;
+}
+  
+.main-header {
+    height: 90px;
+}
+  
+.slider {
+    position: relative;
+    
+    padding-top: 321px;
+    
+    text-align: center;
+    color: #ffffff;
+}
+  
+.slider-list {
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+  
+.slide {
+    display: none;
+}
+  
+.slide-title {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+}
+  
+.button {
+    display: inline-block;
+    padding: 12px 44px;
+  
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 41px;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: top;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  
+    background: #f26843;
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 50px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    border: none;
+  
+    cursor: pointer;
+}
+  
+.button:hover {
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+  
+.button:active {
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+  
+.slider-controls {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: 20;
+    
+    font-size: 0;
+}
+  
+.slider-controls label {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+  
+    vertical-align: top;
+  
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+  
+#product-1:checked ~ .site-wrapper {
+    background-color: #849d8f;
+    background-image: url("../img/ice.png");
+}
+  
+#product-2:checked ~ .site-wrapper {
+    background-color: #8996a6;
+    background-image: url("img/slider-item2.png");
+}
+  
+#product-3:checked ~ .site-wrapper {
+    background-color: #9d8b84;
+    background-image: url("img/slider-item3.png");
+}
+  
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+    display: block;
+}
+  
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+    background-color: #ffffff;
 }
 
 a {
     text-decoration: none;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 
 
@@ -28,11 +176,7 @@ a {
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0000);
-    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
 }
 
 .main-navigation {
@@ -66,44 +210,10 @@ a {
 }
 
 .header-info {
-    text-align: right;
-}
-
-.button {
-    text-align: center;
     color: #ffffff;
-    vertical-align: middle;
-    
-    
-    background-color: #E74A35;
-    border: none;
-    border-radius: 50px;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-    background-color: #F26843;
-}
-
-.button-slider {
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    width: 282px;
-    height: 66px;
-    left: 459px;
-    top: 541px;
-    margin-left: 459px;
-}
-
-.slider-text {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 60px;
+    text-align: right;
+    width: auto;
+    height: 100px;
 }
 
 .banners {
@@ -111,6 +221,8 @@ a {
 }
 
 .button-banner-jam {
+    margin-top: 25px;
+    margin-left: 370px;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
@@ -118,7 +230,8 @@ a {
     height: 49px;
 }
 .button-banner-chocolate {
-    
+    margin-top: 25px;
+    margin-left: 350px;
     width: 192px;
     height: 48px;
     font-weight: bold;
@@ -174,8 +287,37 @@ a {
     border-radius: 15px;
 }
 
-.about-magazine {
+.catalog a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    align-items: center;
+}
+
+.hits {
     margin: auto;
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    width: 267px;
+    height: 267px;
+    margin-right: 40px;
+}
+
+.catalog {
+    flex-wrap: wrap;
+}
+
+.about-magazine {
     border-radius: 15px;
     width: 1200px;
     height: 325px;
@@ -258,6 +400,7 @@ h4 {
     font-size: 24px;
     line-height: 30px;
     text-decoration: underline;
+    display: inline-block;
 }
 
 .news-item:hover,
@@ -284,13 +427,25 @@ h4 {
 }
 
 .login-form {
+    margin-left: 15px;
     width: 371px;
-    height: 47px;
+    height: 45px;
     display: flex;
-    justify-content: center;
+}
+
+
+.email {
+    padding-left: 10px;
+    text-align: left;
+    border-radius: 15px;
+    width: 371px;
+    height: 40px;
+    border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
 .button-mail {
+    margin-top: 15px;
+    margin-left: 10px;
     width: 141px;
     height: 46px;
     text-align: center;
@@ -307,7 +462,8 @@ h4 {
 
 .main-footer {
     display: flex;
-    width: 1177px;
+    width: 1250px;
+    margin: 0 auto;
 }
 
 .footer-social ul {
