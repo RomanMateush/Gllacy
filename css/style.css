@@ -35,30 +35,30 @@ body {
 }
   
 .site-wrapper::before {
-    background-image: url("img/slider-item2.png");
+    background-image: url("../img/slider-item2.png");
 }
   
 .site-wrapper::after {
-    background-image: url("img/slider-item3.png");
+    background-image: url("../img/slider-item3.png");
 }
   
 .container {
     box-sizing: border-box;
     width: 1250px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     padding-left: 27px;
-    padding-top: 9px;
+    padding-top: 8px;
 }
   
 .main-header {
-    height: 90px;
+    height: 50px;
 }
   
 .slider {
     position: relative;
     
-    padding-top: 321px;
+    padding-top: 310px;
     
     text-align: center;
     color: #ffffff;
@@ -88,7 +88,6 @@ body {
 .button {
     display: inline-block;
     padding: 12px 44px;
-  
     font-weight: 600;
     font-size: 31px;
     line-height: 41px;
@@ -96,14 +95,12 @@ body {
     color: #ffffff;
     vertical-align: top;
     text-decoration: none;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  
+    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76); 
     background: #f26843;
     background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
     border-radius: 50px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border: none;
-  
     cursor: pointer;
 }
   
@@ -142,17 +139,17 @@ body {
   
 #product-1:checked ~ .site-wrapper {
     background-color: #849d8f;
-    background-image: url("../img/ice.png");
+    background-image: url("../img/slider-item.png");
 }
   
 #product-2:checked ~ .site-wrapper {
     background-color: #8996a6;
-    background-image: url("img/slider-item2.png");
+    background-image: url("../img/slider-item2.png");
 }
   
 #product-3:checked ~ .site-wrapper {
     background-color: #9d8b84;
-    background-image: url("img/slider-item3.png");
+    background-image: url("../img/slider-item3.png");
 }
   
 #product-1:checked ~ .site-wrapper #slide1,
@@ -184,6 +181,16 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
+    text-decoration: underline;
+}
+
+.site-navigation {
+    width: 394px;
+    height: 100px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .site-navigation,
@@ -200,6 +207,7 @@ a {
 .site-navigation a,
 .user-navigation a{
     color: #ffffff;
+    padding-left: 10px;
 }
 
 .site-navigation a:hover,
@@ -218,29 +226,34 @@ a {
 
 .banners {
     display: flex;
+    margin-top: 18px;
 }
 
 .button-banner-jam {
     margin-top: 25px;
-    margin-left: 370px;
+    margin-left: 375px;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
-    width: 168px;
-    height: 49px;
+    width: 165px;
+    height: 50px;
+    text-align: center;
+    padding: 0;
 }
 .button-banner-chocolate {
     margin-top: 25px;
-    margin-left: 350px;
-    width: 192px;
-    height: 48px;
+    margin-left: 345px;
+    width: 190px;
+    height: 45px;
     font-weight: bold;
     font-size: 18px;
     line-height: 24px;
+    padding: 0;
 }
 
 .raspberry {
-    margin-left: 20px;
+    margin-top: 35px;
+    margin-left: 15px;
     width: 316px;
     font-style: normal;
     font-weight: bold;
@@ -249,6 +262,7 @@ a {
 }
 
 .banner-info {
+    margin-top: 32px;
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -269,7 +283,8 @@ a {
 }
 
 .chocolate {
-    margin-left: 20px;
+    margin-top: 35px;
+    margin-left: 17px;
     width: 360px;
     font-style: normal;
     font-weight: bold;
@@ -278,7 +293,7 @@ a {
 }
 
 .banner-second {
-    margin-left: 80px;
+    margin-left: 28px;
     width: 560px;
     height: 230px;
     background: #ffffff;
@@ -298,10 +313,68 @@ a {
 }
 
 .hits {
-    margin: auto;
+    margin-top: 15px;
     display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
     padding-top: 25px;
     padding-bottom: 70px;
+}
+
+.main-catalog {
+    width: 1151px;
+    height: 1200px;
+}
+
+.row1 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+
+.row2 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+
+.row3 {
+    margin-top: 15px;
+    display: flex;
+    justify-content: start;
+    padding-top: 25px;
+    padding-bottom: 70px;
+}
+
+.main-catalog a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    align-items: center;
+}
+
+.lists {
+    list-style: none;
+}
+
+.lists {
+    display: flex;
+    width: 190px;
+    height: 28px;
+    margin-top: 75px;
+    text-align: right;
+}
+
+.lists a {
+    color: #ffffff;
+    padding-right: 5px;
 }
 
 .image1,
@@ -310,7 +383,7 @@ a {
 .image4 {
     width: 267px;
     height: 267px;
-    margin-right: 40px;
+    margin-right: 25px;
 }
 
 .catalog {
@@ -318,53 +391,82 @@ a {
 }
 
 .about-magazine {
+    margin-top: 25px;
     border-radius: 15px;
-    width: 1200px;
-    height: 325px;
+    width: 1150px;
+    height: 300px;
     color: #000000;
     background-image: url("../img/waffle-big.png");
     background-repeat: repeat;
     
 }
 
+.magazine {
+    padding-left: 20px;
+}
+
 .about-list {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 h3 {
-    margin-left: 20px;
-    padding-top: 10px;
+    padding-top: 22px;
     width: 1043px;
-    height: 60px;
+    height: 50px;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 33px;
 }
+
+.ice,
+.cow,
+.thermometer {
+    margin-bottom: 24px;
+    padding-right: 3px;
+}
+
+.eco {
+    margin-bottom: 50px;
+    padding-right: 3px;
+    margin-top: 4px;
+}
+
+.thermometer {
+    margin-bottom: 27px;
+    margin-top: 4px;
+}
+
+
 
 .about-ice,
 .about-eco {
-    margin-left: 10px;
     display: inline-block;
     width: 488px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    margin: 0;
 }
 
 .box2 {
     padding-left: 20px;
 }
 
+.about-cow {
+    margin-top: 0px;
+}
+
 .about-cow,
 .about-thermometer {
-    margin-left: 10px;
     display: inline-block;
     width: 482px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+    margin: 0;
 }
 
 
@@ -409,7 +511,7 @@ h4 {
 }
 
 .mailing {
-    margin-left: 90px;
+    margin-left: 30px;
     border-radius: 15px;
     height: 220px;
     width: 560px;
@@ -419,11 +521,18 @@ h4 {
 }
 
 .mailing-text {
+    margin-top: 32px;
     width: 517px;
-    margin-left:15px;
+    margin-left: 27px;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+}
+
+.map {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
 }
 
 .login-form {
@@ -444,6 +553,9 @@ h4 {
 }
 
 .button-mail {
+    padding-left: 15px;
+    padding-top: 3px;
+    font-size: 22px;
     margin-top: 15px;
     margin-left: 10px;
     width: 141px;
@@ -516,4 +628,88 @@ h4 {
     margin-left: 160px;
     width: 219px;
     text-align: center;
+}
+
+.fillers {
+    color: black;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    width: 705px;
+    height: 39px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    opacity: 0.2;
+}
+
+.check {
+    width: 24px;
+    height: 20px;
+    mix-blend-mode: normal;
+}
+
+.field{
+    color: #FFFFFF;
+}
+
+.button-catalog {
+    color: black;
+    width: 146px;
+    height: 39px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    margin-top: 29px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 50px;
+}
+
+.first-line {
+    display: flex;
+}
+
+.second-line {
+    display: flex;
+}
+
+.bread {
+    margin-top: 60px;
+}
+
+
+.breadcrumbs {
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0; 
+    padding: 0; /* Убираем отступы */
+}
+
+.breadcrumbs a{
+    color: #ffffff;
+}
+
+.breadcrumbs li {
+    display: inline-block; /* Выстраиваем по горизонтали */
+}
+
+.breadcrumbs li::before {
+    content: '>>'; /* Разделитель */
+    margin-left: 5px; /* Отступ слева */
+    margin-right: 5px; /* Отступ справа */
+    color: #ffffff; /* Цвет разделителя */
+}
+
+.breadcrumbs li:first-child::before {
+    content: ''; /* Убираем разделитель для первого пункта */
+}
+
+
+.page {
+    padding-left: 1000px;
 }
